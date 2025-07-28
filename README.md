@@ -110,9 +110,3 @@
 
 ---
 
-## 📁 11. LLMOps Real-Time Projects
-- 🗂️ Chat with Docs (RAG + LangChain)
-- 🤖 AI Assistant (Agentic + LangGraph)
-- 📊 Legal Doc Analyzer (RAG + LLMEval)
-- 🔍 Search-Powered Q&A Bot
-- 🧪 Hallucination-Resistant Pipeline (Ragas + Eval)
