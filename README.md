@@ -1,67 +1,118 @@
-📁 LLMOps (Large Language Model Operations)
-│
-├── 🧠 1. Foundation
-│   ├── 1.1 What is LLMOps?
-│   ├── 1.2 Why LLMOps is Different from MLOps
-│   └── 1.3 Key Challenges in LLM Lifecycle
-│
-├── 🧱 2. Core Building Blocks
-│   ├── 2.1 Data Management
-│   │   ├── 2.1.1 Data Collection & Curation
-│   │   ├── 2.1.2 Data Labeling & Annotation
-│   │   └── 2.1.3 Dataset Versioning (DVC, Pachyderm)
-│   │
-│   ├── 2.2 Model Development
-│   │   ├── 2.2.1 Prompt Engineering
-│   │   ├── 2.2.2 Fine-Tuning (LoRA, QLoRA, PEFT)
-│   │   ├── 2.2.3 Evaluation & Benchmarking (Helm, Ragas)
-│   │   └── 2.2.4 Model Versioning (MLflow, HuggingFace Hub)
-│   │
-│   ├── 2.3 Model Deployment
-│   │   ├── 2.3.1 Inference Optimization (vLLM, TGI, ONNX, GGUF)
-│   │   ├── 2.3.2 Serving Frameworks (vLLM, TGI, Ray Serve, BentoML)
-│   │   └── 2.3.3 Scaling with APIs & Streaming
-│   │
-│   ├── 2.4 Monitoring & Logging
-│   │   ├── 2.4.1 Token Usage & Cost Monitoring
-│   │   ├── 2.4.2 Tracing (LangSmith, OpenLLMetry)
-│   │   ├── 2.4.3 Hallucination & Bias Detection
-│   │   └── 2.4.4 Feedback Loops (Human-in-the-Loop, RLAIF)
-│   │
-│   └── 2.5 CI/CD for LLMs
-│       ├── 2.5.1 Environment Setup (dev/stage/prod)
-│       ├── 2.5.2 GitHub Actions / GitLab CI for LLM Workflows
-│       ├── 2.5.3 Testing Prompts & Chains (LangChain Testing, LlamaIndex Eval)
-│       └── 2.5.4 Canary & Shadow Deployments
-│
-├── 📦 3. Model Orchestration & Agent Systems
-│   ├── 3.1 LangChain (Chains, Tools, Agents)
-│   ├── 3.2 LangGraph (Agentic Workflows with Memory/Checkpoints)
-│   ├── 3.3 LlamaIndex (RAG, Data Connectors, Query Engines)
-│   └── 3.4 DSPy (Declarative LLM Programming)
-│
-├── 🔐 4. Security, Privacy & Governance
-│   ├── 4.1 Data Anonymization & Redaction
-│   ├── 4.2 Model Access Control & API Rate Limits
-│   ├── 4.3 GDPR/Compliance for LLMs
-│   └── 4.4 Prompt Injection & Jailbreak Defense
-│
-├── ⚖️ 5. Evaluation & Alignment
-│   ├── 5.1 RAG Evaluation (Ragas, Relevance, Faithfulness)
-│   ├── 5.2 Agent Evaluation (HumanEval, Chain-of-Thought)
-│   ├── 5.3 LLM-as-a-Judge Benchmarks (MT Bench, Open LLM Leaderboards)
-│   └── 5.4 Feedback Loops with Open Feedback Frameworks
-│
-├── 🧩 6. Interop & Ecosystem Integration
-│   ├── 6.1 HuggingFace Transformers, PEFT, Datasets
-│   ├── 6.2 OpenAI / Anthropic APIs in Open Systems
-│   ├── 6.3 Vector DBs (Chroma, Weaviate, Qdrant)
-│   ├── 6.4 Embedding Models (BGE, GTE, Instructor, Cohere)
-│   └── 6.5 Model Routing / Tool Routing (LangChain ToolRouter, ReAct, RouterChain)
-│
-└── 🚀 7. Real-Time Projects (End-to-End)
-    ├── 7.1 Chat with PDF / Docs (LangChain + Chroma + DeepSeek)
-    ├── 7.2 RAG Pipeline with Evaluation (LlamaIndex + Ragas)
-    ├── 7.3 Multi-Agent Workflow (LangGraph + OpenLLMetry)
-    ├── 7.4 Open Source LLM Deployment (Mistral + vLLM + BentoML)
-    └── 7.5 CI/CD with Prompt Testing & Canary Deployment (GitHub Actions + LangSmith)
+# 📘 LLMOps (Large Language Model Operations)
+
+## 🌱 1. Foundations
+- ✅ What is LLMOps?
+- ✅ Why LLMs need Ops (vs. MLOps)?
+- ✅ Key Differences: MLOps vs LLMOps
+- ✅ System Design Overview
+
+---
+
+## 🏗️ 2. Core Components
+### 2.1. Data Layer
+- 📦 Raw Data Collection
+- 🧹 Preprocessing Pipelines
+- 🧠 Embedding Generation
+- 📥 Chunking Strategies
+
+### 2.2. Vector Databases
+- 🧠 FAISS
+- 📇 Chroma
+- 🔍 Weaviate
+- 📎 Qdrant
+- 💾 Milvus
+
+### 2.3. LLM Models & Serving
+- 🤖 Model Providers (Open Source)
+  - LLaMA / Mistral / DeepSeek / Phi
+- 🧰 Model Serving Frameworks
+  - vLLM
+  - TGI (Text Generation Inference)
+  - LMDeploy
+  - Ollama
+- 🕸️ Model Orchestration
+  - LangChain
+  - LangGraph
+  - LlamaIndex
+- 🧪 Prompt Engineering
+- 📊 Evaluation Metrics (e.g., BLEU, BERTScore)
+
+---
+
+## 🧠 3. RAG (Retrieval Augmented Generation)
+- 🔗 What is RAG?
+- 📤 RAG Pipelines
+- 🗂️ Retriever Types
+- 🧱 Chunking & Embeddings
+- 🧪 RAG Evaluation Metrics
+
+---
+
+## 🛠️ 4. Agentic Workflows
+- 🤖 What are Agents?
+- 🧭 Routing & Planning
+- 🧠 Memory Management
+- 🔗 Tool Use & Integration
+- 📍 LangGraph Agent Flows
+
+---
+
+## 🚀 5. Fine-Tuning & Adaptation
+- 🔧 LoRA (Low Rank Adaptation)
+- 📐 QLoRA
+- 🧵 PEFT (Parameter-Efficient Fine-Tuning)
+- 🧪 Eval Tools (e.g., trulens, Ragas)
+
+---
+
+## 🧪 6. Evaluation Frameworks
+- 📦 Open Source: Ragas, TruLens
+- 🧪 Manual & Auto Evaluation
+- 📊 Eval Metrics: F1, Accuracy, Consistency
+- 🧠 Hallucination Detection
+
+---
+
+## 📦 7. Packaging & Deployment
+- 🐳 Dockerizing LLM Pipelines
+- ☁️ Deploying on:
+  - AWS EC2 + Load Balancer
+  - GCP Vertex AI (optional)
+  - Kubernetes (K8s)
+- 🪄 Model & Pipeline APIs
+
+---
+
+## ⚙️ 8. Monitoring & Logging
+- 📈 LangSmith
+- 🪵 Weights & Biases
+- 🧠 OpenLLMetry (OpenTelemetry for LLMs)
+- 🛡️ Alerting & Token Tracking
+
+---
+
+## 📂 9. CI/CD for LLMOps
+- 🔁 GitHub Actions for Model Updates
+- 🛠️ Model Versioning (with DVC or MLflow)
+- 🚚 Automated Embedding Rebuilds
+- 🌐 Continuous Vector DB Updates
+
+---
+
+## 🧠 10. LLMOps Tools & Frameworks
+- 🧩 LangChain, LangGraph
+- 📦 MLflow
+- 🎯 BentoML, FastAPI
+- 🔍 Haystack
+- ⚙️ Prefect / Airflow (Pipeline Scheduling)
+- 📜 Prompt Layering Tools
+- 📡 LLMGuard / Rebuff (LLM Security)
+
+---
+
+## 📁 11. LLMOps Real-Time Projects
+- 🗂️ Chat with Docs (RAG + LangChain)
+- 🤖 AI Assistant (Agentic + LangGraph)
+- 📊 Legal Doc Analyzer (RAG + LLMEval)
+- 🔍 Search-Powered Q&A Bot
+- 🧪 Hallucination-Resistant Pipeline (Ragas + Eval)
